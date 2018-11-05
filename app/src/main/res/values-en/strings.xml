@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Showcase</string>
+    <string name="action_settings">Settings</string>
+    <string name="fragment_title_home">Home</string>
+    <string name="btn_menu">Menu</string>
+    <string name="btn_quit">Exit</string>
+    <string name="dialog_title">Do you want to leave the application ?</string>
+    <string name="dialog_message">Are you sure you want to leave the application  ?</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_yes_toast">Closing...</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_no_toast">Canceling...</string>
+    <string name="btn_anko_toast">Toast example</string>
+    <string name="btn_anko_snackbar">Snackbar example</string>
+    <string name="btn_anko_answer">I exist thanks to Anko!</string>
+</resources>

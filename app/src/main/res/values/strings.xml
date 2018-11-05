@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Showcase</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Nicolas Rochette</string>
+    <string name="nav_header_subtitle" translatable="false">nicolas.rochette@etu.unice.fr</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings">Option</string>
+    <string name="fragment_title_home">Accueil</string>
+    <string name="btn_menu">Menu</string>
+    <string name="btn_quit">Quitter</string>
+    <string name="dialog_title">Quitter l\'application ?</string>
+    <string name="dialog_message">Êtes vous sûr de vouloir quitter l\'application ?</string>
+    <string name="dialog_cancel">Annuler</string>
+    <string name="dialog_yes">Oui</string>
+    <string name="dialog_yes_toast">Fermeture...</string>
+    <string name="dialog_no">Non</string>
+    <string name="dialog_no_toast">Annulation...</string>
+    <string name="btn_anko_toast">Exemple toast</string>
+    <string name="btn_anko_snackbar">Exemple Snackbar</string>
+    <string name="btn_anko_answer">J\'apparaît grâce à Anko !</string>
+
+
+    <string-array name="name">
+        <item>CSS</item>
+        <item>Java</item>
+        <item>Javascript</item>
+        <item>Kotlin</item>
+    </string-array>
+    <string-array name="src">
+        <item>css3</item>
+        <item>java</item>
+        <item>javascript</item>
+        <item>kotlin</item>
+    </string-array>
+</resources>
