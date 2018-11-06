@@ -3,9 +3,7 @@ package fr.rn605435.ndrawer
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
-import android.support.v4.app.Fragment
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
@@ -14,8 +12,6 @@ import android.view.MenuItem
 import fr.rn605435.ndrawer.tool.replace
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
-import org.jetbrains.anko.AnkoLogger
-import org.jetbrains.anko.toast
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     val i : Int =20
@@ -23,6 +19,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
 
         fab.setOnClickListener { view ->
             val intent = Intent(Intent.ACTION_SENDTO)
@@ -66,10 +63,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        when (item.itemId) {
-            R.id.action_settings -> return true
-            else -> return super.onOptionsItemSelected(item)
+        when(item.itemId){
+            R.id.action_quote -> {
+                val intent = Intent(this, QuoteActivity::class.java)
+                startActivity(intent)
+            }
         }
+        return super.onOptionsItemSelected(item)
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -80,9 +81,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_cardview-> {
                 replace(FragmentCardview())
             }
-            R.id.nav_gridview -> {
-                replace(FragmentGridView())
-            }
             R.id.nav_mc -> {
                 replace(FragmentMagicCircle())
             }
@@ -90,8 +88,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val intent = Intent(this, AnkoActivity::class.java)
                 startActivity(intent)
             }
-            R.id.nav_send -> {
-                val intent = Intent(this, AnkoActivity::class.java)
+            R.id.nav_gridview -> {
+                val intent = Intent(this, GridViewActivity::class.java)
                 startActivity(intent)
             }
         }

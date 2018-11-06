@@ -13,10 +13,6 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="Cardview" />
         <item
-            android:id="@+id/nav_gridview"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="GridView" />
-        <item
             android:id="@+id/nav_mc"
             android:icon="@drawable/ic_menu_manage"
             android:title="Magic circle" />
@@ -29,9 +25,9 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="Anko" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Constructeur" />
+                android:id="@+id/nav_gridview"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="GridView" />
         </menu>
     </item>
 
