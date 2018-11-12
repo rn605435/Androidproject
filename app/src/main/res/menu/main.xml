@@ -4,6 +4,6 @@
     <item
         android:id="@+id/action_quote"
         android:icon="@drawable/ic_format_quote_black_24dp"
-        android:title="Quote"
+        android:title="@string/menuaction_quote"
         app:showAsAction="ifRoom" />
 </menu>

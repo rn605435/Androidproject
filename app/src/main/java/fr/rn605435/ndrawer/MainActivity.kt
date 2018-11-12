@@ -4,14 +4,23 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.support.design.widget.NavigationView
+import android.support.v4.app.FragmentManager
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
+import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.Toast
 import fr.rn605435.ndrawer.tool.replace
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import kotlinx.android.synthetic.main.fragment_home.*
+import kotlin.system.exitProcess
+import android.content.DialogInterface
+
+
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     val i : Int =20
@@ -32,6 +41,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
         }
 
+
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
         drawer_layout.addDrawerListener(toggle)
@@ -41,15 +51,21 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         nav_view.setNavigationItemSelectedListener(this)
     }
 
-    fun openDrawer(){
+    fun openDrawer() {
         drawer_layout.openDrawer(GravityCompat.START)
     }
-
     override fun onBackPressed() {
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
             drawer_layout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
+        }
+        else {
+            AlertDialog.Builder(this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle(getString(R.string.backpressed_title))
+                    .setMessage(getString(R.string.backpressed_sentence))
+                    .setPositiveButton(getString(R.string.backpressed_positive)) { dialog, which -> finish() }
+                    .setNegativeButton(getString(R.string.backpressed_negative), null)
+                    .show()
         }
     }
 
@@ -83,6 +99,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_mc -> {
                 replace(FragmentMagicCircle())
+            }
+            R.id.nav_numberpicker -> {
+                replace(FragmentNumberPicker())
             }
             R.id.nav_anko -> {
                 val intent = Intent(this, AnkoActivity::class.java)

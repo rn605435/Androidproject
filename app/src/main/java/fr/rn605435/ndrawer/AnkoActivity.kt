@@ -26,10 +26,17 @@ class AnkoActivity: AppCompatActivity(), AnkoLogger{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_anko)
+        this.supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        this.supportActionBar?.setDisplayShowHomeEnabled(true)
         btnAnko.setOnClickListener{
             toast(R.string.btn_anko_answer)
         }
         info { "String logged with Anko !"}
         warn { null } //Print null
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

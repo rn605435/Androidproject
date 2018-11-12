@@ -18,9 +18,10 @@
         android:layout_marginStart="135dp"
         android:layout_marginLeft="135dp"
         android:layout_marginTop="87dp"
-        android:background="@color/colorAccent"
+        android:background="@color/secondaryColorAmber"
         android:clickable="true"
         android:text="@string/btn_anko_toast"
+        android:textColor="@color/primaryTextColorAmber"
         android:focusable="true" />
 
 </RelativeLayout>

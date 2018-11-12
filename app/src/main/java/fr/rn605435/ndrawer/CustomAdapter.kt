@@ -44,7 +44,7 @@ class CustomAdapter(val languageList: Array<Language>): RecyclerView.Adapter<Cus
             itemView.setOnClickListener {
                 Toast.makeText(
                         itemView.context,
-                        "Name: " + language.name,
+                       itemView.context.getString(R.string.languageName) + language.name,
                         Toast.LENGTH_LONG).show()
             }
         }

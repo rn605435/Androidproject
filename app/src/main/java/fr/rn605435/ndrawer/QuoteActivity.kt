@@ -16,17 +16,23 @@ class QuoteActivity: AppCompatActivity(), AnkoLogger {
         super.onCreate(savedInstanceState)
         setTheme(R.style.AppTheme_PINK)
         setContentView(R.layout.activity_quote)
+        this.supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        this.supportActionBar?.setDisplayShowHomeEnabled(true)
         doAsync {
             val result = URL("https://talaikis.com/api/quotes/random/").readText()
             val parser: Parser = Parser()
             val stringBuilder: StringBuilder = StringBuilder(result)
             val json: JsonObject = parser.parse(stringBuilder) as JsonObject
-            val quote = "Quote : ${json.string("quote")}"
-            val author = "Author : ${json.string("author")}"
+            val quote = getString(R.string.quote_quote) + json.string("quote")
+            val author = getString(R.string.quote_author) + json.string("author")
             uiThread {
                 tvQuote.text = quote
                 tvAuthor.text = author
             }
         }
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

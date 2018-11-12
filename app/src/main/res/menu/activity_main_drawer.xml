@@ -7,27 +7,32 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home_black_24dp"
-            android:title="Accueil" />
+            android:title="@string/menu_accueil" />
         <item
             android:id="@+id/nav_cardview"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Cardview" />
+            android:title="@string/menu_cardview" />
         <item
             android:id="@+id/nav_mc"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Magic circle" />
+            android:icon="@drawable/ic_fiber_manual_record_black_24dp"
+            android:title="@string/menu_magic_circle" />
+        <item
+            android:id="@+id/nav_numberpicker"
+            android:icon="@drawable/ic_import_export_black_24dp"
+            android:title="@string/menu_number_picker" />
+
     </group>
 
-    <item android:title="Kotlin">
+    <item android:title="@string/menu_kotlin">
         <menu>
             <item
                 android:id="@+id/nav_anko"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Anko" />
+                android:title="@string/menu_anko" />
             <item
                 android:id="@+id/nav_gridview"
                 android:icon="@drawable/ic_menu_slideshow"
-                android:title="GridView" />
+                android:title="@string/menu_gridview" />
         </menu>
     </item>
 

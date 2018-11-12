@@ -5,8 +5,8 @@
     <string name="nav_header_title" translatable="false">Nicolas Rochette</string>
     <string name="nav_header_subtitle" translatable="false">nicolas.rochette@etu.unice.fr</string>
     <string name="nav_header_desc" translatable="false">Navigation header</string>
-    <string name="action_settings">Option</string>
-    <string name="fragment_title_home">Accueil</string>
+
+    <!-- Fragment Home -->
     <string name="btn_menu">Menu</string>
     <string name="btn_quit">Quitter</string>
     <string name="dialog_title">Quitter l\'application ?</string>
@@ -16,10 +16,33 @@
     <string name="dialog_yes_toast">Fermeture...</string>
     <string name="dialog_no">Non</string>
     <string name="dialog_no_toast">Annulation...</string>
-    <string name="btn_anko_toast">Exemple toast</string>
-    <string name="btn_anko_snackbar">Exemple Snackbar</string>
-    <string name="btn_anko_answer">J\'apparaît grâce à Anko !</string>
 
+
+    <!-- Activity Anko -->
+    <string name="btn_anko_toast">Exemple toast</string>
+    <string name="btn_anko_answer">J\'apparaît grâce à Anko !</string>
+    <!-- Custom Adapter -->
+    <string name="languageName">Nom :</string>
+    <!-- Drawer menu -->
+    <string name="menu_accueil">Accueil</string>
+    <string name="menu_cardview" translatable="false">Cardview</string>
+    <string name="menu_magic_circle">Cercle Magique</string>
+    <string name="menu_number_picker" translatable="false">Number Picker</string>
+    <string name="menu_kotlin" translatable="false">Kotlin</string>
+    <string name="menu_anko" translatable="false">Anko</string>
+    <string name="menu_gridview" translatable="false">GridView</string>
+    <string name="menuaction_quote">Citation</string>
+    <!-- Title in toolbar -->
+    <string name="fragment_title_home">Accueil</string>
+    <string name="title_magiccircle">Cercle magique</string>
+    <!-- Dialog on back pressed -->
+    <string name="backpressed_title">Fermer l\'application ?</string>
+    <string name="backpressed_sentence">Etes vous sur de vouloir fermer l\'application?</string>
+    <string name="backpressed_positive">Oui</string>
+    <string name="backpressed_negative">Non</string>
+    <string name="title_quote">Citation aléatoire</string>
+    <string name="quote_author">Author :&#160;</string>
+    <string name="quote_quote">Citation :&#160;</string>
 
     <string-array name="name">
         <item>CSS</item>
@@ -34,6 +57,5 @@
         <item>kotlin</item>
     </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

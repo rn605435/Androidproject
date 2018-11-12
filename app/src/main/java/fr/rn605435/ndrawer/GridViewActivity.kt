@@ -18,6 +18,8 @@ class GridViewActivity: AppCompatActivity(), AnkoLogger {
         super.onCreate(savedInstanceState)
         setTheme(R.style.AppTheme_RED)
         setContentView(R.layout.activity_gridview)
+        this.supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        this.supportActionBar?.setDisplayShowHomeEnabled(true)
         // Get an instance of base adapter
         val adapter = ColorBaseAdapter()
 
@@ -29,5 +31,9 @@ class GridViewActivity: AppCompatActivity(), AnkoLogger {
         grid_view.horizontalSpacing = 15
         grid_view.verticalSpacing = 15
         grid_view.stretchMode = GridView.STRETCH_COLUMN_WIDTH
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

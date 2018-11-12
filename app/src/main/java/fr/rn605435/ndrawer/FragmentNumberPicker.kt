@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.NumberPicker
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -17,16 +18,22 @@ private const val ARG_PARAM2 = "param2"
  * A simple [Fragment] subclass.
  *
  */
-class FragmentMagicCircle : Fragment() {
-
+class FragmentNumberPicker : Fragment() {
+    companion object {
+        val NUMBER_PICKER_VALUE: String = "number_picker_value"
+    }
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mc, container, false)
+
+        return inflater.inflate(R.layout.fragment_number_picker, container, false)
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        activity!!.title = getString(R.string.title_magiccircle)
+        val numberPicker: NumberPicker = view.findViewById(R.id.numberPicker)
+        numberPicker.minValue = 0
+        numberPicker.maxValue = 20
+        activity!!.title = "Numberpicker"
     }
 
 }

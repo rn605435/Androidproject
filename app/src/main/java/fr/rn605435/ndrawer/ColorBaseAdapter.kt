@@ -44,7 +44,7 @@ class ColorBaseAdapter : BaseAdapter (){
         card.setOnClickListener{
             // Show selected color in a toast message
             Toast.makeText(parent.context,
-                    "Clicked : ${list[position].first}",Toast.LENGTH_SHORT).show()
+                    list[position].first,Toast.LENGTH_SHORT).show()
 
             // Get the activity reference from parent
             val activity  = parent.context as Activity

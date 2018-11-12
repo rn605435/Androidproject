@@ -27,7 +27,7 @@
         </activity>
         <activity
             android:name=".QuoteActivity"
-            android:label="Citation">
+            android:label="@string/title_quote">
 
         </activity>
         <activity
