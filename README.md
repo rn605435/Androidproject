@@ -31,21 +31,21 @@ Les différents éléments de menus pointent vers des écrans de l’application
 Les éléments Citation, Anko et GridView sont des activités tandis que tous les autres sont des fragments de l'activity appelée MainActivity.  
 
 ## Impression d'écran  
-
-<img src="img/Accueil.PNG" height="300">
 *Ecran d'accueil*  
-<img src="img/CardView.PNG" height="300">
+<img src="img/Accueil.PNG" height="300">  
 *Ecran Cardview*  
-<img src="img/magiccircle.gif" height="300">  
+<img src="img/CardView.PNG" height="300">  
 *Ecran Cercle Magique*  
-<img src="img/NumberPicker.PNG" height="300">  
+<img src="img/magiccircle.gif" height="300">    
 *Ecran Number Picker*  
-<img src="img/Anko.PNG" height="300">
+<img src="img/NumberPicker.PNG" height="300">    
 *Ecran Anko*  
-<img src="img/GridView.gif" height="300">
+<img src="img/Anko.PNG" height="300">  
 *Ecran GridView*  
-<img src="img/Citation.PNG" height="300">
+<img src="img/gridview_video.gif" height="300">  
 *Ecran Citation*  
+<img src="img/Citation.PNG" height="300">  
+ 
 
 ## Description des impressions d'écrans  
 
