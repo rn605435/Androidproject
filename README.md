@@ -34,7 +34,7 @@ Les éléments Citation, Anko et GridView sont des activités tandis que tous le
 
 <img src="img/Accueil.PNG" height="300">
 *Ecran d'accueil*  
-<img src="img/Cardview.PNG" height="300">
+<img src="img/CardView.PNG" height="300">
 *Ecran Cardview*  
 <img src="img/magiccircle.gif" height="300">  
 *Ecran Cercle Magique*  
@@ -42,7 +42,7 @@ Les éléments Citation, Anko et GridView sont des activités tandis que tous le
 *Ecran Number Picker*  
 <img src="img/Anko.PNG" height="300">
 *Ecran Anko*  
-<img src="img/gridview.gif" height="300">
+<img src="img/GridView.gif" height="300">
 *Ecran GridView*  
 <img src="img/Citation.PNG" height="300">
 *Ecran Citation*  
