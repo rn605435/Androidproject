@@ -32,19 +32,19 @@ Les éléments Citation, Anko et GridView sont des activités tandis que tous le
 
 ## Impression d'écran  
 
-![](img/accueil.png | height=300)  
+<img src="img/accueil.png" height="300">
 *Ecran d'accueil*  
-![](img/cardView.png)  
+<img src="img/cardview.png" height="300">
 *Ecran Cardview*  
-![](img/magiccircle.gif)  
+<img src="img/magiccircle.gif" height="300">  
 *Ecran Cercle Magique*  
-![](img/numberPicker.png)  
+<img src="img/numberpicker.png" height="300">  
 *Ecran Number Picker*  
-![](img/anko.png)  
+<img src="img/anko.png" height="300">
 *Ecran Anko*  
-![](img/gridview_video.gif)  
+<img src="img/gridview.gif" height="300">
 *Ecran GridView*  
-![](img/citation.png)  
+<img src="img/citation.png" height="300">
 *Ecran Citation*  
 
 ## Description des impressions d'écrans  
