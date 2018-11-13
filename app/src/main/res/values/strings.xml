@@ -41,7 +41,7 @@
     <string name="backpressed_positive">Oui</string>
     <string name="backpressed_negative">Non</string>
     <string name="title_quote">Citation aléatoire</string>
-    <string name="quote_author">Author :&#160;</string>
+    <string name="quote_author">Auteur :&#160;</string>
     <string name="quote_quote">Citation :&#160;</string>
 
     <string-array name="name">
