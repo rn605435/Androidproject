@@ -4,7 +4,7 @@
 **Auteur :** Nicolas Rochette  
 **Auteur du Readme :** Nicolas Rochette  
 **Résumé du projet :** mettre en pratique tout ou en partie, les éléments abordés pendant les séances de programmation Android.   
-Ce projet peut être démarrer à partir de l’application construite dans le cadre du TD/TP 4 : Réaliser une interface utilisateur native. Cette dernière comporte un menu latéral mettant en oeuvre des *Fragments* et des *Activities*. L’objectif est de créer un application vitrine des développements mis en pratique durant les séances d’Android.  
+Ce projet peut être démarré à partir de l’application construite dans le cadre du TD/TP 4 : Réaliser une interface utilisateur native. Cette dernière comporte un menu latéral mettant en oeuvre des *Fragments* et des *Activities*. L’objectif est de créer un application vitrine des développements mis en pratique durant les séances d’Android.  
 **Technologies utilisées  :** Android Studio - Kotlin  
 **Requis :** Android studio  
 
