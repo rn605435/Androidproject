@@ -67,11 +67,11 @@ Le fragment contient un simple number picker initialisé à travers la méthode 
 Nouvelle activité qui hérite d'ankologger pour bénéficier des fonctionnalités de la bibliothèque Anko importé dans les dépendances. Le bouton montre la méthode de toast de la bibliothèque lors d'un événement click.  
 
 ### GridView. 
-On initialise les dimension de la gridview à la création de l'activité. La gridview utilise également un adapter ColorBaseAdapter qui la remplit. L'adapter contient une liste contenant le nom et la valeur de la couleur, et la méthode getView remplit la grille en prenant le nom de la couleur et en appliquant sa valeur au background de l'item.  
+On initialise les dimension de la gridview à la création de l'activité. La gridview utilise également un adapter *ColorBaseAdapter* qui la remplit. L'adapter contient une liste contenant le nom et la valeur de la couleur, et la méthode *getView* remplit la grille en prenant le nom de la couleur et en appliquant sa valeur au background de l'item.  
 On capte également l'évènement click sur chaque item pour afficher dynamiquement le nom de l'item cliqué et changer le background du fragment avec sa valeur.  
 
 ### Citation   
-L'activité citation est accessible via l'icone *"* de la barre du haut, à chaque entrée dans l'activité on fait une requête à une API fournissant des citations et leurs auteurs de manière asynchrone. On utilise la méthode doAsync d'Anko de cette façon :   
+L'activité citation est accessible via l'icone *"* de la barre du haut, à chaque entrée dans l'activité on fait une requête à une API fournissant des citations et leurs auteurs de manière asynchrone. On utilise la méthode *doAsync* d'Anko de cette façon :   
 ```kotlin
 doAsync {
     var result = runLongTask()
@@ -85,6 +85,8 @@ De cette façon à chaque fois que l'on rentre dans cette activité une nouvelle
 
 ## Remarque d'ensemble sur le code    
 
-La méthode Onbackpressed a été override afin de ne pas sortir de l'application lorsque l'on appuie sur le bouton retour d'un fragment de l'activité. Lorsque l'on va dans une nouvelle activité comme Citation, ou Anko, les méthodes setDisplayHomeAsUpEnabled et setDisplayShowHomeEnabled sont utilisées pour afficher la flèche de retour dans la barre du haut et on utilise la méthode OnSupportNavigateUp pour retourner à l'activité précédente.   
+La méthode Onbackpressed a été override afin de ne pas sortir de l'application lorsque l'on appuie sur le bouton retour d'un fragment de l'activité. Lorsque l'on va dans une nouvelle activité comme Citation, ou Anko, les méthodes *setDisplayHomeAsUpEnabled* et *setDisplayShowHomeEnabled* sont utilisées pour afficher la flèche de retour dans la barre du haut et on utilise la méthode *OnSupportNavigateUp* pour retourner à l'activité précédente.   
 
-Les traductions de toutes les strings des layouts on était traduites en anglais, l'application est donc traduite lorsque l'on met la langue de l'appareil en anglais.  
+Les traductions de toutes les strings des layouts on était traduites en anglais, l'application est donc traduite lorsque l'on met la langue de l'appareil en anglais.
+
+Plusieurs thèmes sont utilisés les couleurs changent dans les différentes activités grâce à la méthode *setTheme*.
