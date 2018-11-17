@@ -21,11 +21,11 @@ L’application comporte un écran principal. Ce dernier présente un menu laté
 Les différents éléments de menus pointent vers des écrans de l’application :  
 
  - Accueil présentant une image et 2 boutons.  
- - Cardview présentant une liste de *cardview* généré à l'aide d'une *data class*.  
+ - Cardview présentant une liste de *cardview* générée à l'aide d'une *data class*.  
  - Cercle magique présentant un cercle en mouvement qui rebondit sur les bords de l'écran.  
  - Number picker présentant un élément graphique de type number picker.  
  - Anko présentant une fonctionnalité de la bibliothèque Anko.  
- - GridView présentant un layout de type gridview à l'intérieur duquel on trouve des cardview qui change la couleur du fond programmatiquement.  
+ - GridView présentant un layout de type gridview à l'intérieur duquel on trouve des cardview qui changent la couleur du fond programmatiquement.  
  - Citation, situé à droite dans la barre du haut, présentant une citation au hasard ainsi que l'auteur de la citation, appelé à l'aide d'une requête asynchrone sur une api externe.  
 
 Les éléments Citation, Anko et GridView sont des activités tandis que tous les autres sont des fragments de l'activity appelée MainActivity.  
@@ -85,7 +85,7 @@ De cette façon à chaque fois que l'on rentre dans cette activité une nouvelle
 
 ## Remarque d'ensemble sur le code    
 
-La méthode Onbackpressed a été override afin de ne pas sortir de l'application lorsque l'on appuie sur le bouton retour d'un fragment de l'activité. Lorsque l'on va dans une nouvelle activité comme Citation, ou Anko, les méthodes *setDisplayHomeAsUpEnabled* et *setDisplayShowHomeEnabled* sont utilisées pour afficher la flèche de retour dans la barre du haut et on utilise la méthode *OnSupportNavigateUp* pour retourner à l'activité précédente.   
+La méthode Onbackpressed a été surchargée afin de ne pas sortir de l'application lorsque l'on appuie sur le bouton retour d'un fragment de l'activité. Lorsque l'on va dans une nouvelle activité comme Citation, ou Anko, les méthodes *setDisplayHomeAsUpEnabled* et *setDisplayShowHomeEnabled* sont utilisées pour afficher la flèche de retour dans la barre du haut et on utilise la méthode *OnSupportNavigateUp* pour retourner à l'activité précédente.   
 
 Les traductions de toutes les strings des layouts on était traduites en anglais, l'application est donc traduite lorsque l'on met la langue de l'appareil en anglais.
 
