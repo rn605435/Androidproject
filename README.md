@@ -10,7 +10,7 @@ Ce projet peut être démarré à partir de l’application construite dans le c
 
 
 **Installation :**   
-  - [Lien de Telechargement](https://github.com/rn605435/Androidproject/archive/master.zip)  ou git clone https://github.com/rn605435/Androidproject.git
+  - [Lien de Telechargement](https://github.com/rn605435/Androidproject/archive/master.zip)  ou executer la commande :  ```git clone https://github.com/rn605435/Androidproject.git```
   - Décompresser le dossier .zip  
   - Ouvrir Android Studio  
   - Fichier > Ouvrir > Androidproject  
