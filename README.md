@@ -93,3 +93,5 @@ Plusieurs thèmes sont utilisés les couleurs changent dans les différentes act
 
 
 ## Remarque d'ensemble sur l'application
+
+L'application reprend plusieurs éléments vu en cours. Le menu de navigation permet d'accéder à chacun de ces éléments. Il n'y a pas de but réel à l'application, c'est plus une vitrine des différentes notions abordées en cours. De nombreux éléments du material design d'Android sont repris et l'interface est agréable. Au niveau du code, les points abordées en cours ont bien été repris et les différentes classes et variable possèdent des noms pertinents. Les consignes ont bien été respectés que ce soit l'écran principal, l'écran présentant les fonctionnalités Anko ou encore l'écran présentant le cercle à l'écran, de plus plusieurs fragments ont été utilisés.
