@@ -2,7 +2,7 @@
 
 **Titre :** NDrawer  
 **Auteur :** Nicolas Rochette  
-**Auteur du Readme :** Nicolas Rochette  
+**Auteur du Readme :** Nicolas Rochette & Stephen Fafournoux  
 **Résumé du projet :** mettre en pratique tout ou en partie, les éléments abordés pendant les séances de programmation Android.   
 Ce projet peut être démarré à partir de l’application construite dans le cadre du TD/TP 4 : Réaliser une interface utilisateur native. Cette dernière comporte un menu latéral mettant en oeuvre des *Fragments* et des *Activities*. L’objectif est de créer un application vitrine des développements mis en pratique durant les séances d’Android.  
 **Technologies utilisées  :** Android Studio - Kotlin  
@@ -90,3 +90,6 @@ La méthode Onbackpressed a été surchargée afin de ne pas sortir de l'applica
 Les traductions de toutes les strings des layouts on était traduites en anglais, l'application est donc traduite lorsque l'on met la langue de l'appareil en anglais.
 
 Plusieurs thèmes sont utilisés les couleurs changent dans les différentes activités grâce à la méthode *setTheme*.
+
+
+## Remarque d'ensemble sur l'application
